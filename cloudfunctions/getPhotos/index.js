@@ -2,7 +2,7 @@
 const cloud = require('wx-server-sdk')
 
 cloud.init({
-  env: "development-ds5e1"
+  env: cloud.DYNAMIC_CURRENT_ENV
 })
 const db = cloud.database()
 const friendCollection = db.collection("friend")
