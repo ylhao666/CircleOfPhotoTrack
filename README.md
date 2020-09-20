@@ -92,10 +92,6 @@ onLaunch: function () {
 
 关于订阅消息：**https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/subscribe-message.html**
 
-申请订阅消息
-
-![image-20200920163042205](.\image-20200920163042205.png)
-
 修改订阅消息模板 **templateId**
 
 **.\miniprogram\utils\SubscribeMsgCollection.js**
