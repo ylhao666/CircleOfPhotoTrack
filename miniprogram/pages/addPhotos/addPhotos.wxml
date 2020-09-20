@@ -1,0 +1,10 @@
+<van-field model:value="{{ introduction }}" type="textarea" placeholder="请输入简介" autosize border="{{ false }}" maxlength="300" show-word-limit />
+<van-uploader preview-size="100" bind:delete="deletePhoto" file-list="{{ fileList }}" 
+	image-fit="aspectFit" deletable="{{ true }}" max-count="9" multiple 
+	use-before-read bind:before-read="beforeRead" bind:after-read="addPhoto" />
+<view class="uploadBtn">
+	<van-icon name="upgrade" bind:click="release" size="40px" />
+</view>
+<navigator url="../applyList/applyList">
+	<van-notify id="van-notify"/>
+</navigator>

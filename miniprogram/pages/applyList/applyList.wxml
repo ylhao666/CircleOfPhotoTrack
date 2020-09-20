@@ -1,0 +1,32 @@
+<van-tabs color="#1989FA" active="{{activeTab}}" sticky bind:click="changeTab">
+	<van-tab title="新申请">
+		<van-cell-group>
+			<van-cell center="true" title-style="margin-left:20px" wx:for="{{newFriendList}}" wx:for-item="newFriend">
+				<view slot="icon">
+					<van-image width="40" height="40" src="{{newFriend.userInfo[0].avatarUrl}}" />
+				</view>
+				<view slot="title">
+					{{newFriend.userInfo[0].nickName}}
+				</view>
+				<van-button slot="right-icon" bind:click="throughApplication" data-id="{{newFriend._id}}" data-openid="{{newFriend._openid}}" block round size="small" plain type="info">通过</van-button>
+				<!-- <van-dialog id="van-dialog" bind:confirm="sendApplication" bind:cancel="closeDialog" data-userOpenId="{{user._openid}}" /> -->
+			</van-cell>
+		</van-cell-group>
+		<van-empty image="error" description="暂无新申请" wx:if="{{newFriendList.length == 0}}"/>
+	</van-tab>
+	<van-tab title="已通过好友">
+		<van-cell-group>
+			<van-cell center="true" title-style="margin-left:20px" wx:for="{{throughFriendList}}" wx:for-item="throughFriend" value="通过">
+				<view slot="icon">
+					<van-image width="40" height="40" src="{{throughFriend.userInfo[0].avatarUrl}}" />
+				</view>
+				<view slot="title">
+					{{throughFriend.userInfo[0].nickName}}
+				</view>
+				<!-- <van-button slot="right-icon" bind:click="throughApplication" data-id="{{newFriend._id}}" block round size="small" plain type="info">通过</van-button> -->
+				<!-- <van-dialog id="van-dialog" bind:confirm="sendApplication" bind:cancel="closeDialog" data-userOpenId="{{user._openid}}" /> -->
+			</van-cell>
+		</van-cell-group>
+		<van-empty image="search" wx:if="{{throughFriendList.length==0}}" description="通过申请的好友会在这里展示~"/>
+	</van-tab>
+</van-tabs>

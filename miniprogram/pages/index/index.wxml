@@ -1,0 +1,21 @@
+<view class="container" wx:for="{{msgList}}" wx:for-item="msg">
+	<view class="photo">
+		<van-image width="100%" height="100%" radius="5px" data-id="{{msg._id}}"
+    fit="cover" src="{{msg.photoList[0]}}" bind:click="viewPhotoDetail"/>
+	</view>
+	<view class="footer">
+		<view class="user-info">
+			<navigator url="../user/user?_openid={{msg.userInfo[0]._openid}}">
+				<view class="user-head">
+					<van-image width="25" height="25" fit="cover" round src="{{msg.userInfo[0].avatarUrl}}" />
+				</view>
+			</navigator>
+			<view class="user-name">{{msg.userInfo[0].nickName}}</view>
+		</view>
+		<view class="time">{{msg.create_time}}</view>
+	</view>
+</view>
+<van-empty description="暂无动态" wx:if="{{msgList.length == 0}}"/>
+<navigator url="../applyList/applyList">
+	<van-notify id="van-notify"/>
+</navigator>

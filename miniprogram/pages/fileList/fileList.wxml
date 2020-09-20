@@ -1,0 +1,31 @@
+<van-tabs color="#1989FA" active="{{tabIndex}}" bind:change="changeTab" sticky>
+	<van-tab title="图片">
+		<block wx:for="{{photoList}}" wx:for-item="aDayOfPhotos" wx:for-index="photoListIndex">
+			<van-divider dashed contentPosition="center">{{aDayOfPhotos.create_time}}</van-divider>
+			<van-grid square column-num="3" border="{{ false }}">
+				<van-grid-item custom-class="image" url="../photoDetail/photoDetail?id={{photo._id}}" use-slot 
+					wx:for="{{ aDayOfPhotos.list }}" wx:for-item="photo">
+					<image style="width: 100%; height: 100%;" src="{{photo.photoList[0]}}" mode="aspectFill" />
+				</van-grid-item>
+			</van-grid>
+		</block>
+		<van-empty description="无上传图片" image="search" wx:if="{{photoList.length == 0}}"/>
+	</van-tab>
+	<van-tab title="视频">
+		<block wx:for="{{videoList}}" wx:for-item="aDayOfVideos">
+			<van-divider dashed contentPosition="center">{{aDayOfVideos.create_time}}</van-divider>
+			<van-grid square column-num="3" border="{{ false }}">
+				<van-grid-item custom-class="image" url="../videoDetail/videoDetail?id={{video._id}}" use-slot wx:for="{{ aDayOfVideos.list }}" wx:for-item="video">
+					<image style="width: 100%; height: 100%;" src="{{video.thumbUrl}}" mode="aspectFill" />
+				</van-grid-item>
+			</van-grid>
+		</block>
+		<van-empty description="无上传视频" image="search" wx:if="{{videoList.length == 0}}"/>
+	</van-tab>
+</van-tabs>
+<view class="addBtn">
+	<van-icon name="add-o" size="40px" bind:click="uploadFile" />
+</view>
+<navigator url="../applyList/applyList">
+	<van-notify id="van-notify"/>
+</navigator>

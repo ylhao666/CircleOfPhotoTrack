@@ -1,0 +1,20 @@
+<block wx:for="{{starList}}">
+	<navigator url="../photoDetail/photoDetail?id={{item.photoInfo[0]._id}}">
+		<view class="container">
+			<view class="header">
+				<van-image class="image" width="80" height="80" fit="cover" src="{{item.photoInfo[0].photoList[0]}}" />
+				<view class="introduction">
+					{{item.photoInfo[0].introduction}}
+				</view>
+			</view>
+			<view class="footer">
+				<view class="time">{{item.create_time}}</view>
+			</view>
+		</view>
+	</navigator>
+</block>
+<van-empty description="收藏夹空空如也~" wx:if="{{starList.length==0}}"/>
+<view class="whiteBox"></view>
+<navigator url="../applyList/applyList">
+	<van-notify id="van-notify"/>
+</navigator>

@@ -1,0 +1,18 @@
+<van-search value="{{ value }}" placeholder="请输入用户名" name="searchUserName" use-action-slot bind:search="searchUser">
+</van-search>
+<van-cell-group>
+	<van-cell center="true" title-style="margin-left:20px" wx:for="{{userList}}" wx:for-item="user">
+		<view slot="icon">
+			<van-image width="40" height="40" src="{{user.avatarUrl}}" />
+		</view>
+		<view slot="title">
+			{{user.nickName}}
+		</view>
+		<van-icon slot="right-icon" name="plus" size="20px" bind:click="addUser" data-nickName="{{user.nickName}}" />
+		<van-dialog id="apply-dialog" bind:confirm="sendApplication" bind:cancel="closeDialog" data-userOpenId="{{user._openid}}" />
+		<van-dialog id="subscribe-dialog" bind:confirm="sendSubscribeMsg" bind:cancel="closeDialog" data-name="{{user.nickName}}" data-_openid="{{user._openid}}"/>
+	</van-cell>
+</van-cell-group>
+<navigator url="../applyList/applyList">
+	<van-notify id="van-notify"/>
+</navigator>

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "openapi": [
+      "openapi.subscribeMessage.send"
+    ]
+  },
+  "triggers": [{
+    "name": "checkFriendApplication",
+    "type": "timer",
+    "config": "0 * * * * * *"
+  }]
+}

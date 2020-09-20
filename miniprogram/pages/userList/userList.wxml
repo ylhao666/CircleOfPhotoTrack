@@ -1,0 +1,22 @@
+<van-search value="{{ value }}" placeholder="请输入用户名" name="searchUserName" use-action-slot bind:search="searchUser"></van-search>
+<van-skeleton title avatar avatar-shape="square" title-width="30%" avatar-size="40px"  loading="{{ loading }}">
+	<van-cell-group>
+		<van-cell is-link="true" center="true" title-style="margin-left:20px" wx:for="{{friends}}" wx:for-item="friend" url="../user/user?_openid={{friend._openid}}">
+			<view slot="icon">
+				<van-image width="40" height="40" src="{{friend.avatarUrl}}" />
+			</view>
+			<view slot="title">
+				{{friend.nickName}}
+			</view>
+		</van-cell>
+	</van-cell-group>
+</van-skeleton>
+<van-empty image="search" description="点击加号可添加好友哦~" wx:if="{{friends.length==0}}"/>
+<navigator url="../searchUser/searchUser">
+	<view class="addBtn">
+		<van-icon name="add-o" size="40px" />
+	</view>
+</navigator>
+<navigator url="../applyList/applyList">
+	<van-notify id="van-notify"/>
+</navigator>

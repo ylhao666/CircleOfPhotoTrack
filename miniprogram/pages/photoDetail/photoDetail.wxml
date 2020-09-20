@@ -1,0 +1,50 @@
+<view class="header">
+	<van-image width="100%"  bind:click="viewPhoto" fit="widthFix" src="{{photoInfo.photoList[0]}}" />
+	<view class="triplet">
+		<van-icon name="{{goodJob.goodJobIcon?'good-job':'good-job-o'}}" info="{{goodJob.goodJobInfo}}" size="20px" bind:click="clickGoodJob" />
+		<van-icon name="{{star.starIcon?'star':'star-o'}}" info="{{star.starInfo}}" size="20px" bind:click="clickStar" />
+	</view>
+</view>
+<van-tabs active="{{ 0 }}"  color="#1989FA" sticky>
+	<van-tab title="简介">
+		<view class="introduction">
+			<van-cell is-link="true" url="../user/user?_openid={{userInfo._openid}}" center="true" border="{{false}}" title-style="margin-left:20px">
+				<view slot="icon">
+					<van-image width="60" height="60" round src="{{userInfo.avatarUrl}}" />
+				</view>
+				<view slot="title">
+					{{userInfo.nickName}}
+				</view>
+			</van-cell>
+			<view class="introduction-value">
+				<text decode="{{true}}" selectable class="int">
+				{{photoInfo.introduction}}
+				</text>
+			</view>
+		</view>
+	</van-tab>
+	<van-tab title="评论">
+		<view class="comments-list">
+			<view class="comment" wx:for="{{commentList}}" wx:for-item="comment">
+				<view class="comment-header">
+					<van-image width="40" height="40" round src="{{comment.userInfo[0].avatarUrl}}" />
+					<view class="header-user-name">
+						{{comment.userInfo[0].nickName}}
+					</view>
+				</view>
+				<view class="comment-value">
+					{{comment.message}}
+				</view>
+			</view>
+		</view>
+		<view class="whiteBox"></view>
+		<view class="comment-input">
+			<van-field model:value="{{ comment }}" fixed name="comment" clearable show-word-limit type="textarea" maxlength="50" placeholder="请输入评论" autosize border="{{ false }}" use-button-slot>
+				<van-button slot="button" size="small" bind:click="confirm" plain type="info">提交</van-button>
+			</van-field>
+		</view>
+	</van-tab>
+</van-tabs>
+<navigator url="../applyList/applyList">
+	<van-notify id="van-notify"/>
+</navigator>

@@ -1,0 +1,25 @@
+<view class="header">
+	<van-button type="info" open-type="getUserInfo" bind:getuserinfo="login" plain wx:if="{{!user.userInfo}}">授权登录</van-button>
+	<van-image wx:if="{{user.userInfo.avatarUrl}}" width="80" height="80" round src="{{user.userInfo.avatarUrl}}" />
+	<view class="header-username" wx:if="{{user.userInfo.nickName}}">
+		{{user.userInfo.nickName}}
+	</view>
+</view>
+<van-dialog show="{{showDialog}}" show-cancel-button confirm-button-color="#1989FA" confirm-button-open-type="getUserInfo" message="授权登录才可以进行更多操作哦" bind:getuserinfo="login" />
+<van-cell-group>
+	<van-cell title="好友列表" is-link url="../userList/userList" center>
+		<van-icon name="friends-o" size="16px" color="#1989FA" slot="icon" style="margin-right:10px" />
+	</van-cell>
+	<van-cell title="好友申请" is-link url="../applyList/applyList" center>
+		<van-icon name="envelop-o" size="16px" color="#1989FA" slot="icon" style="margin-right:10px" />
+	</van-cell>
+	<van-cell title="点赞列表" is-link url="../likeList/likeList" center>
+		<van-icon name="thumb-circle-o" size="16px" color="#1989FA" slot="icon" style="margin-right:10px" />
+	</van-cell>
+	<van-cell title="收藏夹" is-link url="../favorites/favorites" center>
+		<van-icon name="star-o" size="16px" color="#1989FA" slot="icon" style="margin-right:10px" />
+	</van-cell>
+</van-cell-group>
+<navigator url="../applyList/applyList">
+	<van-notify id="van-notify"/>
+</navigator>

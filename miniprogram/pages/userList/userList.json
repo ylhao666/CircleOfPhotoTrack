@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "用户列表"
+}

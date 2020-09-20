@@ -1,0 +1,11 @@
+<block wx:for="{{likeList}}" wx:for-item="likeItem">
+	<van-card thumb="{{ likeItem.photoInfo[0].photoList[0] }}" thumb-mode="aspectFill" thumb-link="../photoDetail/photoDetail?id={{likeItem.photoInfo[0]._id}}">
+		<view slot="footer">
+			{{likeItem.create_time}}
+		</view>
+	</van-card>
+</block>
+<van-empty image="search" description="为喜欢的图片点个赞吧" wx:if="{{likeList.length==0}}" />
+<navigator url="../applyList/applyList">
+	<van-notify id="van-notify"/>
+</navigator>

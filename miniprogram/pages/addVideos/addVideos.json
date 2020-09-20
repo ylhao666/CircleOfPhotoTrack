@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-uploader": "@vant/weapp/uploader/index"
+  },
+  "navigationBarTitleText": "上传视频"
+}

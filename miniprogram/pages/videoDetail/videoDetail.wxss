@@ -1,0 +1,58 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.introduction-value {
+  padding: 0 20px;
+  text-align: justify;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comments-list {
+  margin-bottom: 70px;
+}
+
+.comment {
+  width: 94%;
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  border-bottom: 0.5rpx solid rgb(238, 237, 237);
+}
+
+.comment-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  font-size: 13px;
+  width: 30%;
+}
+
+.header-user-name {
+  color: rgb(147, 146, 146);
+}
+
+.comment-value {
+  width: 70%;
+  padding-left: 10px;
+}
+
+.whiteBox{
+  width: 100%;
+  height: 150px;
+}
+
+.comment-input {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}

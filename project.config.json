@@ -1,0 +1,153 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"appid": "wx45fe31e3626ca405",
+	"projectname": "cloud-development",
+	"libVersion": "2.13.0",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/center/center",
+					"pathName": "pages/center/center",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fileList/fileList",
+					"pathName": "pages/fileList/fileList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/user/user",
+					"pathName": "pages/user/user",
+					"query": "_openid=oCyR85VhcltYO1rZe-PNuZF7onI4",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/videoList/videoList",
+					"pathName": "pages/videoList/videoList",
+					"query": "id=123",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/photoDetail/photoDetail",
+					"pathName": "pages/photoDetail/photoDetail",
+					"query": "id=aa133ce55f5c7f4c011dd3db7b1085a9",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/searchUser/searchUser",
+					"pathName": "pages/searchUser/searchUser",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/applyList/applyList",
+					"pathName": "pages/applyList/applyList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/addPhotos/addPhotos",
+					"pathName": "pages/addPhotos/addPhotos",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/addVideos/addVideos",
+					"pathName": "pages/addVideos/addVideos",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/likeList/likeList",
+					"pathName": "pages/likeList/likeList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 11,
+					"name": "pages/videoDetail/videoDetail",
+					"pathName": "pages/videoDetail/videoDetail",
+					"query": "id=350d8cf95f604dbd000144363bfb7461",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/favorites/favorites",
+					"pathName": "pages/favorites/favorites",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "pages/userList/userList",
+					"pathName": "pages/userList/userList",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

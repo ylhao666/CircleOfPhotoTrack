@@ -1,0 +1,15 @@
+<van-field model:value="{{ introduction }}" type="textarea" placeholder="请输入简介" 
+	autosize border="{{ false }}" maxlength="300" show-word-limit />
+<video src="{{videoUrl}}" controls="{{true}}" wx:if="{{showVideo}}" 
+	style="width:100%;height:300px;" object-fit="cover"></video>
+<!-- <van-uploader preview-size="100"  deletable="{{ true }}" wx:if="{{!showVideo}}"
+	accept="video" bind:after-read="addVideo" max-count="1"
+	camera="back" compressed="false" max-duration="60" /> -->
+<van-button plain type="info" size="large" wx:if="{{!showVideo}}" block custom-style="width:95%;margin-top:10px;" bind:click="addVideo">上传视频</van-button>
+<van-button plain type="info" size="large" wx:if="{{showVideo}}" block custom-style="width:95%;margin-top:10px;" bind:click="deleteVideo">重新上传</van-button>
+<view class="uploadBtn">
+	<van-icon name="upgrade" bind:click="release" size="40px" />
+</view>
+<navigator url="../applyList/applyList">
+	<van-notify id="van-notify"/>
+</navigator>

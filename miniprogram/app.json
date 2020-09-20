@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/center/center",
+    "pages/fileList/fileList",
+    "pages/user/user",
+    "pages/photoDetail/photoDetail",
+    "pages/videoDetail/videoDetail",
+    "pages/searchUser/searchUser",
+    "pages/applyList/applyList",
+    "pages/addPhotos/addPhotos",
+    "pages/addVideos/addVideos",
+    "pages/likeList/likeList",
+    "pages/favorites/favorites",
+    "pages/userList/userList"
+  ],
+  "tabBar": {
+    "selectedColor": "#1989FA",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/friend-group.png",
+        "selectedIconPath": "images/icon/friend-group-selected.png"
+      },
+      {
+        "pagePath": "pages/fileList/fileList",
+        "text": "文件",
+        "iconPath": "images/icon/fileList.png",
+        "selectedIconPath": "images/icon/fileList-selected.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "我的",
+        "iconPath": "images/icon/center.png",
+        "selectedIconPath": "images/icon/center-selected.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-image": "@vant/weapp/image/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-skeleton": "@vant/weapp/skeleton/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-notify": "@vant/weapp/notify/index"
+  }
+}
