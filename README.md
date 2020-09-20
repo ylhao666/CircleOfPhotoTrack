@@ -21,7 +21,9 @@ root
 
 ### 功能模块划分
 
-<img src = "https://mmbiz.qpic.cn/mmbiz_png/dbt7tI6635ykRrHian3oiba2OwOlcSdKicJcYRibUVMQQMDLWB6A1Ffzu1kzjrMZtBJD2kUibrTzplOxOWTfhQxZo2Q/0?wx_fmt=png" align="left">
+<img src = "https://mmbiz.qpic.cn/mmbiz_png/dbt7tI6635ykRrHian3oiba2OwOlcSdKicJcYRibUVMQQMDLWB6A1Ffzu1kzjrMZtBJD2kUibrTzplOxOWTfhQxZo2Q/0?wx_fmt=png" align="left" />
+
+
 
 ### 引用UI组件
 
@@ -159,6 +161,8 @@ onLaunch: function () {
 <img src="https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/137939a03f97805ea6d1e02ad29509b.jpg?imageMogr2/thumbnail/500x" align="left"/>
 
 <img src="https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/389f0f60e45a08cdd485976a3f54f17.jpg?imageMogr2/thumbnail/500x" align="left"/>
+
+
 
 ## 关于作者
 
