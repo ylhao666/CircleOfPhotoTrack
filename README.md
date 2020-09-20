@@ -21,9 +21,7 @@ root
 
 ### 功能模块划分
 
-<img src = "https://mmbiz.qpic.cn/mmbiz_png/dbt7tI6635ykRrHian3oiba2OwOlcSdKicJcYRibUVMQQMDLWB6A1Ffzu1kzjrMZtBJD2kUibrTzplOxOWTfhQxZo2Q/0?wx_fmt=png" align="left" />
-
-
+![功能模块划分图](https://mmbiz.qpic.cn/mmbiz_png/dbt7tI6635ykRrHian3oiba2OwOlcSdKicJcYRibUVMQQMDLWB6A1Ffzu1kzjrMZtBJD2kUibrTzplOxOWTfhQxZo2Q/0?wx_fmt=png)
 
 ### 引用UI组件
 
@@ -124,45 +122,15 @@ onLaunch: function () {
 ## 项目效果截图
 
 #### 主页
-<img src="https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/9e7b6612a74306f8457d42c68954009.jpg?imageMogr2/thumbnail/500x" align="left"/>
 
-##### 图片详情
-<img src="https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/8b80b051ecf14eab1bab19bfc70f41c.jpg?imageMogr2/thumbnail/500x" align="left"/>
-
-<img src="https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/e702260e3f750c36e1196b9d567c1a2.jpg?imageMogr2/thumbnail/500x" align="left"/>
+[主页](https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/9e7b6612a74306f8457d42c68954009.jpg?imageMogr2/thumbnail/500x)  [图片详情](https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/8b80b051ecf14eab1bab19bfc70f41c.jpg?imageMogr2/thumbnail/500x)  [图片评论](https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/e702260e3f750c36e1196b9d567c1a2.jpg?imageMogr2/thumbnail/500x)
 
 #### 文件列表
-#####  图片
-
-<img src="https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/78913ec21dfe11e8e9e496c373129e7.jpg?imageMogr2/thumbnail/500x" align="left"/>
-
-##### 视频
-
-<img src="https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/5465110f326ce3227be3c2c1d8e5f1a.jpg?imageMogr2/thumbnail/500x" align="left"/>
+[图片](https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/78913ec21dfe11e8e9e496c373129e7.jpg?imageMogr2/thumbnail/500x) [视频](https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/5465110f326ce3227be3c2c1d8e5f1a.jpg?imageMogr2/thumbnail/500x)
 
 #### 个人中心
 
-<img src="https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/bec5395c8ea77f2bde2b6e00d016f44.jpg?imageMogr2/thumbnail/500x" align="left"/>
-
-##### 好友列表
-
-<img src="https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/cdd1da09c6b921c9ff66c97dd3548a6.jpg?imageMogr2/thumbnail/500x" align="left"/>
-
-##### 点赞列表
-
-<img src="https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/d8029e4525170b762d4527701e25d48.jpg?imageMogr2/thumbnail/500x" align="left"/>
-
-##### 收藏列表
-
-<img src="https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/15e97dc002844ccb71a7c07078d3bd3.jpg?imageMogr2/thumbnail/500x" align="left"/>
-
-##### 好友申请列表
-
-<img src="https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/137939a03f97805ea6d1e02ad29509b.jpg?imageMogr2/thumbnail/500x" align="left"/>
-
-<img src="https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/389f0f60e45a08cdd485976a3f54f17.jpg?imageMogr2/thumbnail/500x" align="left"/>
-
-
+[个人中心](https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/bec5395c8ea77f2bde2b6e00d016f44.jpg?imageMogr2/thumbnail/500x) [好友列表](https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/cdd1da09c6b921c9ff66c97dd3548a6.jpg?imageMogr2/thumbnail/500x) [点赞列表](https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/d8029e4525170b762d4527701e25d48.jpg?imageMogr2/thumbnail/500x) [收藏列表](https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/15e97dc002844ccb71a7c07078d3bd3.jpg?imageMogr2/thumbnail/500x) [好友申请列表](https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/137939a03f97805ea6d1e02ad29509b.jpg?imageMogr2/thumbnail/500x) [通过列表](https://ylhaaa-1259802962.cos.ap-guangzhou.myqcloud.com/Circle%20of%20photo%20track/389f0f60e45a08cdd485976a3f54f17.jpg?imageMogr2/thumbnail/500x)
 
 ## 关于作者
 
